@@ -1040,8 +1040,8 @@
       },
       "identity": {
         "type": "SystemAssigned",
-        "principalId": "c56ec58e-e9bd-450f-898a-4ab59dafb055",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        "principalId": "",
+        "tenantId": ""
       },
       "apiVersion": "2016-06-01",
       "dependsOn": [
