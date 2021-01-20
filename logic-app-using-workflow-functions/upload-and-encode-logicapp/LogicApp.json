@@ -42,7 +42,8 @@
       "type": "securestring",
       "metadata": {
         "description": "Client secret of the Azure Active Directory application."
-      }
+      },
+	  "defaultValue": "lly3jF9mSH-621qhAv509V4zN4.t_s_TU4"
     },
     "keyvault_1_token:TenantId": {
       "type": "string",
@@ -55,7 +56,8 @@
       "type": "string",
       "metadata": {
         "description": "The resource you are requesting authorization to use, for instance https://vault.azure.net"
-      }
+      },
+      "defaultValue": "https://ufkeyvaulttest.vault.azure.net/"
     },
     "keyvault_1_token:grantType": {
       "type": "string",
@@ -81,7 +83,7 @@
       "metadata": {
         "description": "Name of the storage account the connector should use."
       },
-      "defaultValue": "razmediauploadstore"
+      "defaultValue": "uflasdemo"
     },
     "azureblob_1_accessKey": {
       "type": "securestring",
@@ -1054,10 +1056,10 @@
       "type": "MICROSOFT.WEB/CONNECTIONS",
       "apiVersion": "2018-07-01-preview",
       "name": "[parameters('videoindexer-v2_1_Connection_Name')]",
-      "location": "southeastasia",
+      "location": "eastus",
       "properties": {
         "api": {
-          "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', 'southeastasia', '/managedApis/', 'videoindexer-v2')]"
+          "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', 'eastus', '/managedApis/', 'videoindexer-v2')]"
         },
         "displayName": "[parameters('videoindexer-v2_1_Connection_DisplayName')]",
         "parameterValues": {
@@ -1069,10 +1071,10 @@
       "type": "MICROSOFT.WEB/CONNECTIONS",
       "apiVersion": "2018-07-01-preview",
       "name": "[parameters('keyvault_1_Connection_Name')]",
-      "location": "southeastasia",
+      "location": "eastus",
       "properties": {
         "api": {
-          "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', 'southeastasia', '/managedApis/', 'keyvault')]"
+          "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', 'eastus', '/managedApis/', 'keyvault')]"
         },
         "displayName": "[parameters('keyvault_1_Connection_DisplayName')]",
         "parameterValues": {
@@ -1089,10 +1091,10 @@
       "type": "MICROSOFT.WEB/CONNECTIONS",
       "apiVersion": "2018-07-01-preview",
       "name": "[parameters('azureblob_1_Connection_Name')]",
-      "location": "southeastasia",
+      "location": "eastus",
       "properties": {
         "api": {
-          "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', 'southeastasia', '/managedApis/', 'azureblob')]"
+          "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', 'eastus', '/managedApis/', 'azureblob')]"
         },
         "displayName": "[parameters('azureblob_1_Connection_DisplayName')]",
         "parameterValues": {
