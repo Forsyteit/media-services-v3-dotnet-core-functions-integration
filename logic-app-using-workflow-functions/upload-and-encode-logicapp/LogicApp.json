@@ -169,7 +169,7 @@
                   "assetStorageAccount": "@{variables('mediaServiceStorageName')}"
                 },
                 "function": {
-                  "id": "/subscriptions/cd85d402-93c1-4339-af18-42930460489c/resourceGroups/raz-mediaservices-workflow-rg/providers/Microsoft.Web/sites/razamsv3functions/functions/CreateEmptyAsset"
+                  "id": "/subscriptions/c6149385-0e3e-486c-b68a-af1fd9d9cd5a/resourceGroups/GKDCWorkingEnv-UFTesting/providers/Microsoft.Web/sites/amsv3functions-ql6uwdp4zsedy/functions/CreateEmptyAsset"
                 }
               },
               "runAfter": {
@@ -237,7 +237,7 @@
                           "transformName": "StandardEncoder-@{variables('encodingPreset')}"
                         },
                         "function": {
-                          "id": "/subscriptions/cd85d402-93c1-4339-af18-42930460489c/resourceGroups/raz-mediaservices-workflow-rg/providers/Microsoft.Web/sites/razamsv3functions/functions/CreateTransform"
+                          "id": "/subscriptions/c6149385-0e3e-486c-b68a-af1fd9d9cd5a/resourceGroups/GKDCWorkingEnv-UFTesting/providers/Microsoft.Web/sites/amsv3functions-ql6uwdp4zsedy/functions/CreateTransform"
                         }
                       },
                       "runAfter": {
@@ -422,7 +422,7 @@
                           "transformName": "@{body('Parse_JSON_-_CreateTransform')?['transformName']}"
                         },
                         "function": {
-                          "id": "/subscriptions/cd85d402-93c1-4339-af18-42930460489c/resourceGroups/raz-mediaservices-workflow-rg/providers/Microsoft.Web/sites/razamsv3functions/functions/SubmitMediaJob"
+                          "id": "/subscriptions/c6149385-0e3e-486c-b68a-af1fd9d9cd5a/resourceGroups/GKDCWorkingEnv-UFTesting/providers/Microsoft.Web/sites/amsv3functions-ql6uwdp4zsedy/functions/SubmitMediaJob"
                         }
                       },
                       "runAfter": {
@@ -457,7 +457,7 @@
                               "transformName": "@{body('Parse_JSON_-_CreateTransform')?['transformName']}"
                             },
                             "function": {
-                              "id": "/subscriptions/cd85d402-93c1-4339-af18-42930460489c/resourceGroups/raz-mediaservices-workflow-rg/providers/Microsoft.Web/sites/razamsv3functions/functions/MonitorMediaJob"
+                              "id": "/subscriptions/c6149385-0e3e-486c-b68a-af1fd9d9cd5a/resourceGroups/GKDCWorkingEnv-UFTesting/providers/Microsoft.Web/sites/amsv3functions-ql6uwdp4zsedy/functions/MonitorMediaJob"
                             }
                           },
                           "runAfter": {
@@ -550,7 +550,7 @@
                             "resourceGroup": "@{variables('resourceGroup')}"
                           },
                           "function": {
-                            "id": "/subscriptions/cd85d402-93c1-4339-af18-42930460489c/resourceGroups/raz-mediaservices-workflow-rg/providers/Microsoft.Web/sites/razamsv3functions/functions/DeleteAsset"
+                            "id": "/subscriptions/c6149385-0e3e-486c-b68a-af1fd9d9cd5a/resourceGroups/GKDCWorkingEnv-UFTesting/providers/Microsoft.Web/sites/amsv3functions-ql6uwdp4zsedy/functions/DeleteAsset"
                           }
                         },
                         "runAfter": {
@@ -883,7 +883,7 @@
                   "sourceStorageAccountName": "@{variables('sourceStorageName')}"
                 },
                 "function": {
-                  "id": "/subscriptions/cd85d402-93c1-4339-af18-42930460489c/resourceGroups/raz-mediaservices-workflow-rg/providers/Microsoft.Web/sites/razamsv3functions/functions/StartBlobContainerCopyToAsset"
+                  "id": "/subscriptions/c6149385-0e3e-486c-b68a-af1fd9d9cd5a/resourceGroups/GKDCWorkingEnv-UFTesting/providers/Microsoft.Web/sites/amsv3functions-ql6uwdp4zsedy/functions/StartBlobContainerCopyToAsset"
                 }
               },
               "runAfter": {
@@ -920,7 +920,7 @@
                       ]
                     },
                     "function": {
-                      "id": "/subscriptions/cd85d402-93c1-4339-af18-42930460489c/resourceGroups/raz-mediaservices-workflow-rg/providers/Microsoft.Web/sites/razamsv3functions/functions/MonitorBlobContainerCopyStatus"
+                      "id": "/subscriptions/c6149385-0e3e-486c-b68a-af1fd9d9cd5a/resourceGroups/GKDCWorkingEnv-UFTesting/providers/Microsoft.Web/sites/amsv3functions-ql6uwdp4zsedy/functions/MonitorBlobContainerCopyStatus"
                     }
                   },
                   "runAfter": {
