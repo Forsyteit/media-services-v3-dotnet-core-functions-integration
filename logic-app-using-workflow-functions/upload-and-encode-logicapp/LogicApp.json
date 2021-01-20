@@ -36,7 +36,7 @@
       "metadata": {
         "description": "Client (or Application) ID of the Azure Active Directory application."
       },
-      "defaultValue": "cd7fe1ac-90d2-463d-bc7d-0e6f76afa6d1"
+      "defaultValue": "f998970b-9a9f-474f-a665-e81843260dc0"
     },
     "keyvault_1_token:clientSecret": {
       "type": "securestring",
@@ -49,7 +49,7 @@
       "metadata": {
         "description": "The tenant ID for the Azure Active Directory application."
       },
-      "defaultValue": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+      "defaultValue": "c4754e8c-5bff-4d73-b99b-d6e71f1e5cab"
     },
     "keyvault_1_token:resourceUri": {
       "type": "string",
@@ -126,7 +126,7 @@
         "southafricanorth",
         "southafricawest"
       ],
-      "defaultValue": "southeastasia"
+      "defaultValue": "eastus"
     },
     "LogicAppName": {
       "type": "string",
